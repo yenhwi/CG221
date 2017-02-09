@@ -1,0 +1,44 @@
+body{
+    font-family: sans-serif;container
+}
+#container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    border-bottom: 3px solid #36d7b7;
+    margin: 0 0 40px 0;
+}
+h2 {
+    color: #F2784B;
+}
+h3 {
+    color: #10BA98;
+}
+p {
+    max-width: 700px;
+}
+a {
+    text-decoration: none;
+    color: #3498DB;
+}
+a:hover {
+    font-style: italic;
+    color: #006494;
+}
+img{
+    width: 300px;
+}
+#week-list {
+    list-style: none;
+    padding: 0;
+}
+.week-item {
+    background-color: #eee;
+    padding: 10px 32px 32px;
+    margin: 32px;
+}
+.screenshot {
+    width: 800px;
+    max-width: 100%;
+}
