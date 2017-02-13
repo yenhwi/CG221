@@ -1,44 +1,24 @@
-body{
-    font-family: sans-serif;container
+* {
+font-family: 'helvetica', serif;
 }
-#container{
-    width: 80%;
-    margin: auto;
-}
-header{
-    border-bottom: 3px solid #36d7b7;
-    margin: 0 0 40px 0;
-}
-h2 {
-    color: #F2784B;
-}
-h3 {
-    color: #10BA98;
-}
-p {
-    max-width: 700px;
-}
+
 a {
-    text-decoration: none;
-    color: #3498DB;
+color: SeaGreen;
+text-decoration: none;
 }
-a:hover {
-    font-style: italic;
-    color: #006494;
+
+body {
+  width: 1280px;
+  height: 720px;
 }
-img{
-    width: 300px;
+div{
+    border: 2px solid style="color:#D2780B";
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
-#week-list {
-    list-style: none;
-    padding: 0;
-}
-.week-item {
-    background-color: #eee;
-    padding: 10px 32px 32px;
-    margin: 32px;
-}
-.screenshot {
-    width: 800px;
-    max-width: 100%;
+
+body {
+    background-image: url("woodbg.png");
 }
