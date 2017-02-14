@@ -1,0 +1,24 @@
+* {
+font-family: 'helvetica', serif;
+}
+
+a {
+color: SeaGreen;
+text-decoration: none;
+}
+
+body {
+  width: 1280px;
+  height: 720px;
+}
+div{
+    border: 2px solid style="color:#D2780B";
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+body {
+    background-image: url("bio/woodbg.png");
+}
