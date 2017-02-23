@@ -1,24 +1,31 @@
-* {
-font-family: 'helvetica', serif;
-}
-
-a {
-color: SeaGreen;
-text-decoration: none;
-}
-
-body {
-  width: 1280px;
-  height: 720px;
-}
-div{
-    border: 2px solid style="color:#D2780B";
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
+/* --- Colors --- */
+/*
+main color: #3dafaf
+light color: #58c7c6
+Brown line:#70400a
+light grey: #f7f5f4
+*/
 
 body {
-    background-image: url("woodbg.png");
+  font-size: 16px;
+  font-family: 'Droid Sans', sans-serif;
+font-family: 'Mada', sans-serif;
+  background-image: url("woodbg2.png")
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+h1 {
+  color: #332200;
+}
+img {
+    max-width: 100%;
+}
+.gallery-item {
+    width: 20%;
+    display: inline-block;
+    margin: 3rem;
+    border-bottom: 3px dotted #70400a;
+    background-color: #f7f5f4;
 }
