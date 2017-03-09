@@ -1,24 +1,72 @@
-* {
-font-family: 'helvetica', serif;
-}
+/* --- Colors --- */
 
-a {
-color: SeaGreen;
-text-decoration: none;
-}
 
 body {
-  width: 1280px;
-  height: 720px;
-}
-div{
-    border: 2px solid style="color:#D2780B";
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
+  font-size: 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Mada', sans-serif;
+  background-image: url("wood_dark.png");
+  text-shadow: 4px 2px 7px rgba(150, 150, 150, 1);
 }
 
-body {
-    background-image: url("woodbg.png");
+.element {
+  animation: bounceIn 5s infinite;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.item {
+  width: 70%;
+  margin: 0rem;
+  -webkit-clip-path: circle(80px at center);
+  clip-path: circle(70px at center);
+  animation: bounceIn 8s
+  }
+
+.gallery-item {
+      width: 20%;
+      display: inline-block;
+      margin: 3rem;
+      border-bottom: 3px dotted #70400a;
+      background-color: #f7f5f4;
+      -webkit-clip-path: circle(80px at center);
+      clip-path: circle(70px at center);
+      animation: bounceIn 8s
+  }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+
+.disappear {
+	opacity: 0.5;
+
+}
+.disappear:hover {
+	opacity: 1;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+  .fix {
+	position: fixed;
+	top: 30px;
+	right: 10px;
 }
