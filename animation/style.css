@@ -9,9 +9,33 @@ body {
   text-shadow: 4px 2px 7px rgba(150, 150, 150, 1);
 }
 
-.element {
-  animation: bounceIn 5s infinite;
+
+.container {
+    max-width: 800px;
+    display: inline-block;
 }
+
+.parent {
+  color: white;
+  padding: 30px;
+  opacity: .85;
+  position: relative;
+  background-color: #ba7e6b;
+  margin-top: 30px;
+}
+
+.element {
+  background-color: lighten(#0074d9, 20);
+  opacity: .85;
+  padding: 20px;
+  color: rgba(255,255,255,.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
 
 @keyframes bounceIn {
   0% {
@@ -19,72 +43,26 @@ body {
     opacity: 0;
   }
   60% {
-    transform: scale(1.2);
-    opacity: 1;
+    transform: scale(1);
+    opacity: 0.5;
   }
   100% {
     transform: scale(1);
   }
 }
 
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+.gallery-item {
+      margin: 2rem;
+      -webkit-clip-path: circle(70px at center);
+      clip-path: circle(80px at center);
+      animation: bounceIn 5s
 }
-.box-1 {
-  transform: rotate(20deg);
-}
-.box-2 {
-  transform: rotate(-55deg);
-}
-
-.item {
-  width: 70%;
-  margin: 0rem;
-  -webkit-clip-path: circle(80px at center);
-  clip-path: circle(70px at center);
-  animation: bounceIn 8s
-  }
-
-.item2 {
-  width: 50%;
-  display: inline-block;
-  margin: 0rem;
-  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-animation: bounceIn 8s
-}
-
-.item3 {
-  width: 50%;
-  display: inline-block;
-  margin: 0rem;
-  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-animation: bounceIn 8s
-}
-
-
-
 
 .disappear {
-	opacity: 0.5;
+	opacity: 1;
+  width: 30%;
 
 }
 .disappear:hover {
-	opacity: 1;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-  .fix {
-	position: fixed;
-	top: 30px;
-	right: 10px;
+	opacity: 0.5;
 }
