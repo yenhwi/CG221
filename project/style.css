@@ -182,11 +182,45 @@ max-width: 600px
     padding: 10px;
     border: 1px solid #FFF;
     width: 218px;
-    color: #FFF;
+    color: #FFF;ß
     margin: 5px;
 }
 
 
+.popUpDiv {
+position:absolute;
+width:320px;
+height:50px;
+border:5px solid white;
+z-index: 9002;
+}
+
+.speech-bubble {
+    background-color: #f8f8f8;
+    border: 4px solid #c8c8c8;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    float: right;
+}
+
+.speech-bubble2 {
+    background-color: #f8f8f8;
+    border: 4px solid #c8c8c8;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    float: left;
+}
+
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
 
 .bottom {
     border-color: #c8c8c8 transparent transparent transparent;
