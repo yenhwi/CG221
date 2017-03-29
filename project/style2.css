@@ -3,7 +3,7 @@ body {
   font-size: 25px;
   font-family: 'Inconsolata', monospace;
   font-family: 'Arimo', sans-serif;
-  background-image: url("wood_pattern.png");
+  background-image: url("https://media.giphy.com/media/3oz8xRsCP14cAnCtIA/giphy.gif");
 }
 
 
@@ -38,15 +38,13 @@ h5 {
 }
 
 header {
-   background-image:url("https://media.giphy.com/media/3oEjHEbAfMn6PVEqDS/giphy.gif");
+   background-image:url('chicken.gif');
    width:100%;
    margin-left:auto;
    margin-right:auto;
    background-position:center;
    background-repeat:repeat;
   }​
-
-
 
 .content {
     margin: 30px;
@@ -139,57 +137,21 @@ li a:hover:not(.active) {
   }
 }
 
-/*--slider--*/
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-
-body { margin: 0; }
-div#slider { overflow: hidden; }
-div#slider figure img { width: 70%; float: left; }
-div#slider figure {
-  position: relative;
-  width: 900%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite;
-}
-
 
 img {
-position: relative;
-max-width: 600px
-}
-
-.image-wrapper {
-    position: relative;
-    width: auto;
-}
-.image-wrapper p {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    border: 1px solid #FFF;
-    width: 218px;
-    color: #FFF;
-    margin: 5px;
+position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 500px;
+ height: 500px;
+ margin-top: -250px; /* Half the height */
+ margin-left: -250px; /* Half the width */
 }
 
 
 .popUpDiv {
 position:absolute;
-width:320px;
+width:300px;
 height:50px;
 border:5px solid white;
 z-index: 9002;
@@ -197,24 +159,12 @@ z-index: 9002;
 
 .speech-bubble {
     background-color: #f8f8f8;
-    border: 4px solid #c8c8c8;
+    border: 3px solid #c8c8c8;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     position: relative;
-    float: right;
-}
-
-.speech-bubble2 {
-    background-color: #f8f8f8;
-    border: 4px solid #c8c8c8;
-    border-radius: 5px;
-    width: 200px;
-    text-align: center;
-    padding: 50px;
-    position: relative;
-    float: left;
 }
 
 .speech-bubble .arrow {
