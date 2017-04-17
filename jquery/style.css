@@ -1,21 +1,67 @@
+body {
+  font-size: 30px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Hind', sans-serif;
+  background-color:#F5D0A9;
+  text-shadow: 4px 2px 7px rgba(150, 150, 150, 1);
+}
+
+h1 {
+    font-size: 40px;
+    color:#f9de2f;
+    font-family: 'Rubik Mono One', cursive;
+}
+
+h2 {
+    font-size: 28px;
+    color:#42a7f4;
+    text-align: center;
+    font-family: 'Hind', cursive;
+}
+
+#container {
+    max-width: 800px;
+    margin:auto
+  }
+
+img {
+    width: 400px;
+}
+
 div {
-    height:200px;
-    width:200px;
+    height:400px;
+    width:400px;
     display: inline-block;
 }
 
 #red {
-    background-color:#FF0000;
+    background-color:#ed8529;
+    border: 5px dotted white;
 }
 
 #blue {
-    background-color:#0000FF;
+    background-color:#42a7f4;
+    border: 5px dotted white;
 }
 
 #yellow {
-    background-color:#E2BE22;
+    background-color:#f9de2f;
+    border: 5px dotted white;
 }
 
 #green {
-    background-color:#008800;
+    background-color:#a3d88c;
+    border: 5px dotted white;
+}
+
+#panel, #flip {
+padding: 5px;
+text-align: center;
+background-color: #ed3e2a;
+border: 5px dotted white;
+}
+
+#panel {
+padding: 5px;
+display: none;
 }

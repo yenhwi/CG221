@@ -19,8 +19,9 @@ $(document).ready(function() {
    });
 });
 
-$(document).click(function(){
-  $('img').animate ({
-    right: '250px'
-  });
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
 });
