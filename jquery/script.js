@@ -9,12 +9,14 @@ $(document).ready(function() {
            height: '+=10px'
        });
    });
-   $('div').mouseleave(function() {
+
+$('div').mouseleave(function() {
        $(this).animate({
            height: '-=10px'
        });
    });
-   $('div').click(function() {
+
+$('div').click(function() {
        $(this).toggle(1000);
    });
 });
