@@ -6,38 +6,18 @@ var song1;
 var song2;
 var song3;
 var song4;
-var img;
 
 function preload() {
-  song1 = loadSound('Itantme.mp3');
-  song2 = loadSound('24.mp3');
-  song3 = loadSound('Marshmello.mp3');
-  song4 = loadSound('Paris.mp3');
+  song1 = loadSound('Brunomars.mp3');
+  song2 = loadSound('24K.mp3');
 }
 
 function setup() {
-  createCanvas(1450, 800, WEBGL);
+  createCanvas(windowWidth, windowHeight, WEBGL);
   noStroke();
-  img = ("http://files.effectsdatabase.com/brands/thumbs/colorsound_000.jpg")
-  img.position(500, 500)
-  img.mousePressed(uniHide);
-  textSize(40);
-  text('Move the mouse to the background color that you like, and the music will change', 20, 50);
 }
 
 function draw() {
-
-strokeWeight(2);
-fill(128 + sin(frameCount*0.1) * 128);
-if (mouseIsPressed) {
-  stroke(255);
-}
-else {
-  noStroke();
-}
-textSize(12 + (mouseX / width)*72);
-text("Attention, please.", 50, 200);
-}
 
   if(mouseIsPressed){
     background('#ff9999');
@@ -60,22 +40,11 @@ text("Attention, please.", 50, 200);
 
   t += 0.025;
 
-}
 
-function uniHide{
-  img.hide();
-}
-
-function unShow(){
-  img.show();
-}
-
-function keyPressed(){
-  uniShow();
 }
 
 function mouseMoved() {
-  if ( mouseX > 600 && mouseY > 400) {
+  if ( mouseX > 500 && mouseY > 500) {
     if (song1.isPlaying() == false ){ //if this song is not playing
       song1.play(); //play this song
     }
@@ -83,7 +52,7 @@ function mouseMoved() {
     song2.stop();
     song3.stop();
     song4.stop();
-  } else if ( mouseX > 600 && mouseY < 400) {
+  } else if ( mouseX > 500 && mouseY < 500) {
     if (song2.isPlaying() == false ){ //if this song is not playing
       song2.play();
     }
@@ -91,7 +60,7 @@ function mouseMoved() {
     song1.stop();
     song3.stop();
     song4.stop();
-  } else if ( mouseX < 600 && mouseY < 400) {
+  } else if ( mouseX < 100 && mouseY < 100) {
     if (song3.isPlaying() == false ){ //if this song is not playing
       song3.play();
     }
