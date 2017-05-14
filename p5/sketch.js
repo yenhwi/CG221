@@ -2,12 +2,6 @@ var dot;
 var shape;
 var spawnPoint;
 var bgColor;
-var song1;
-var song2;
-var song3;
-var song4;
-var img;
-
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -19,17 +13,7 @@ function setup() {
 }
 
 function draw() {
-
-  textSize(40);
-  text('Move the mouse to the background color that you like, and the music will change', 20, 50);
-}
-
-  if(mouseIsPressed){
-    background('#ff9999');
-  } else {
-    background(mouseX, 60, mouseY);
-  }
-
+  background(bgColor);
 
   dot.update();
   shape.draw();
@@ -123,50 +107,4 @@ var Polygon = function() {
   return {
     'draw': draw
   }
-  function uniHide{
-    img.hide();
-  }
-
-  function unShow(){
-    img.show();
-  }
-
-  function keyPressed(){
-    uniShow();
-  }
-
-  function mouseMoved() {
-    if ( mouseX > 600 && mouseY > 400) {
-      if (song1.isPlaying() == false ){ //if this song is not playing
-        song1.play(); //play this song
-      }
-      //stop all other songs from playing
-      song2.stop();
-      song3.stop();
-      song4.stop();
-    } else if ( mouseX > 600 && mouseY < 400) {
-      if (song2.isPlaying() == false ){ //if this song is not playing
-        song2.play();
-      }
-      //stop all other songs from playing
-      song1.stop();
-      song3.stop();
-      song4.stop();
-    } else if ( mouseX < 600 && mouseY < 400) {
-      if (song3.isPlaying() == false ){ //if this song is not playing
-        song3.play();
-      }
-      //stop all other songs from playing
-      song1.stop();
-      song2.stop();
-      song4.stop();
-    } else {
-      if (song4.isPlaying() == false ){ //if this song is not playing
-        song4.play();
-      }
-      //stop all other songs from playing
-      song1.stop();
-      song2.stop();
-      song3.stop();
-    }
-  }
+}
