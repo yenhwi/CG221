@@ -27,10 +27,6 @@ function draw() {
     background(mouseX, 60, mouseY);
   }
 
-  fill(255);
-  textSize(32);
-  text("It was the best of times. Such good times.",
-  mouseX, mouseY, 200, 200);
 
   //basicMaterial(255, 0, 0);
   ambientLight(255, 0, 0);
