@@ -2,3 +2,9 @@ body {
     padding: 0;
     margin: 0;
 }
+
+h2 {
+  position: absolute;
+   left: 100px;
+   top: 150px;
+}
