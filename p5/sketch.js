@@ -40,7 +40,7 @@ function draw() {
 
   rotateY(frameCount / 100);
   rotateX(map(sin(t), -1, 1, -PI, PI));
-  sphere(200, 50);
+  triangle(30, 75, 58, 20, 86, 75);
 
   t += 0.025;
 
