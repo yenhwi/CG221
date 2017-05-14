@@ -21,20 +21,10 @@ function setup() {
 
 function draw() {
 
-  //basicMaterial(255, 0, 0);
-  ambientLight(255, 0, 0);
-
-  directionalLight(255, 100, 0, 0.1, -1, 0, sin(t / 2));
-
-  directionalLight(0, 0, 200, 0.1, 1, 0, sin(t));
-
-  //  	directionalLight(0, 0, 255, 0.1,  0.5, 1, sin(t*10));
-
-  rotateY(frameCount / 100);
-  rotateX(map(sin(t), -1, 1, -PI, PI));
-  sphere(200, 50);
-
-  t += 0.025;
+  fill(255);
+  textSize(32);
+  text("It was the best of times. Such good times.",
+  mouseX, mouseY, 200, 200);
 
 
 }
