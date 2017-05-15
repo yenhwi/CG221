@@ -8,8 +8,10 @@ var song3;
 var song4;
 
 function preload() {
-  song1 = loadSound('Brunomars.mp3');
-  song2 = loadSound('24K.mp3');
+  song1 = loadSound('Itantme.mp3');
+  song2 = loadSound('Marshmello.mp3');
+  song3 = loadSound('Martin.mp3')
+  song4 = loadSound('Paris.mp3')
 }
 
 function setup() {
