@@ -3,12 +3,14 @@ var song1;
 var song2;
 var song3;
 var song4;
+var img;
 
 function preload() {
   song1 = loadSound('Itantme.mp3');
   song2 = loadSound('24.mp3');
   song3 = loadSound('Marshmello.mp3');
   song4 = loadSound('Paris.mp3');
+  img = loadImg("http://gph.is/Z0VUVm")
 }
 
 function setup() {
