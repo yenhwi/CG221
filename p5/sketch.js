@@ -14,6 +14,9 @@ function preload() {
 }
 
 function setup() {
+  image(img, 0, 0);
+  image(img, 0, 0, 100, 100);
+  image(img, 0, 0, 100, 100, 0, 0, 100, 100);
   createCanvas(windowWidth, windowHeight, WEBGL);
   noStroke();
 }
