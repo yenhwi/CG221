@@ -1,4 +1,15 @@
 var t=1;
+var song1;
+var song2;
+var song3;
+var song4;
+
+function preload() {
+  song1 = loadSound('Itantme.mp3');
+  song2 = loadSound('24.mp3');
+  song3 = loadSound('Marshmello.mp3');
+  song4 = loadSound('Paris.mp3');
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
@@ -20,7 +31,43 @@ function draw() {
   rotateY(frameCount / 100);
   rotateX(map(sin(t), -1, 1, -PI, PI));
 
-  sphere(300, 50);
+  sphere(100, 50);
 
   t += 0.025;
+}
+
+function mouseMoved() {
+  if ( mouseX > 500 && mouseY > 500) {
+    if (song1.isPlaying() == false ){ //if this song is not playing
+      song1.play(); //play this song
+    }
+    //stop all other songs from playing
+    song2.stop();
+    song3.stop();
+    song4.stop();
+  } else if ( mouseX > 500 && mouseY < 500) {
+    if (song2.isPlaying() == false ){ //if this song is not playing
+      song2.play();
+    }
+    //stop all other songs from playing
+    song1.stop();
+    song3.stop();
+    song4.stop();
+  } else if ( mouseX < 100 && mouseY < 100) {
+    if (song3.isPlaying() == false ){ //if this song is not playing
+      song3.play();
+    }
+    //stop all other songs from playing
+    song1.stop();
+    song2.stop();
+    song4.stop();
+  } else {
+    if (song4.isPlaying() == false ){ //if this song is not playing
+      song4.play();
+    }
+    //stop all other songs from playing
+    song1.stop();
+    song2.stop();
+    song3.stop();
+  }
 }
