@@ -17,7 +17,12 @@ function setup() {
 }
 
 function draw() {
-  background(255, 0, 100);
+  if(mouseIsPressed){
+    background('#ff9999');
+  } else {
+    background(mouseX, 60, mouseY);
+  }
+
 
   //basicMaterial(255, 0, 0);
   ambientLight(255, 0, 0);
