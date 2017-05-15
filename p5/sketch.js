@@ -10,7 +10,7 @@ function preload() {
   song2 = loadSound('24.mp3');
   song3 = loadSound('Marshmello.mp3');
   song4 = loadSound('Paris.mp3');
-  img = loadImg("http://gph.is/Z0VUVm")
+  img = loadImg("cl.png")
 }
 
 function setup() {
