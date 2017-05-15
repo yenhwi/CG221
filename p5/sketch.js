@@ -7,6 +7,7 @@ var song2;
 var song3;
 var song4;
 
+
 function preload() {
   song1 = loadSound('Itantme.mp3');
   song2 = loadSound('Marshmello.mp3');
@@ -62,7 +63,7 @@ function mouseMoved() {
     song1.stop();
     song3.stop();
     song4.stop();
-  } else if ( mouseX < 100 && mouseY < 100) {
+  } else if ( mouseX < 500 && mouseY < 500) {
     if (song3.isPlaying() == false ){ //if this song is not playing
       song3.play();
     }
@@ -79,4 +80,3 @@ function mouseMoved() {
     song2.stop();
     song3.stop();
   }
-}
