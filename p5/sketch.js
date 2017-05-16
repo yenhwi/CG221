@@ -3,7 +3,6 @@ var song1;
 var song2;
 var song3;
 var song4;
-var img;
 
 function preload() {
   song1 = loadSound('Itantme.mp3');
