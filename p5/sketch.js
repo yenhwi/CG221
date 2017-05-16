@@ -42,7 +42,7 @@ function draw() {
 }
 
 function mouseMoved() {
-  if ( mouseX > 400 && mouseY > 300) {
+  if ( mouseX > 500 && mouseY > 500) {
     if (song1.isPlaying() == false ){ //if this song is not playing
       song1.play(); //play this song
     }
@@ -50,7 +50,7 @@ function mouseMoved() {
     song2.stop();
     song3.stop();
     song4.stop();
-  } else if ( mouseX > 400 && mouseY < 300) {
+  } else if ( mouseX > 500 && mouseY < 500) {
     if (song2.isPlaying() == false ){ //if this song is not playing
       song2.play();
     }
@@ -58,7 +58,7 @@ function mouseMoved() {
     song1.stop();
     song3.stop();
     song4.stop();
-  } else if ( mouseX < 400 && mouseY < 300) {
+  } else if ( mouseX < 500 && mouseY < 500) {
     if (song3.isPlaying() == false ){ //if this song is not playing
       song3.play();
     }
