@@ -3,8 +3,29 @@ body {
     margin: 0;
 }
 
-h2 {
-  position: absolute;
+h1 {
+   position: absolute;
    left: 100px;
    top: 150px;
+   font-size: 25px;
+   font-family: 'Barrio', cursive;
+   color: white;
 }
+
+h2 {
+    font-size: 20px;
+    color:green;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#container {
+    max-width: 400px;
+    margin:auto
+  }
+
+.center {
+      padding: 70px 0;
+      border: 2px solid white;
+      text-align: center;
+  }

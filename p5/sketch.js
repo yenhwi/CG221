@@ -4,6 +4,8 @@ var song2;
 var song3;
 var song4;
 
+
+
 function preload() {
   song1 = loadSound('Itantme.mp3');
   song2 = loadSound('24.mp3');
@@ -12,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas( windowWidth, windowHeight, WEBGL);
+  createCanvas( 1000, 800, WEBGL);
   noStroke();
 }
 
