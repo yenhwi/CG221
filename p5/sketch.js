@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 600, WEBGL);
+  createCanvas( windowWidth, windowHeight, WEBGL);
   noStroke();
 }
 
