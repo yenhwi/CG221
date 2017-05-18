@@ -15,5 +15,7 @@ h1 {
   }
 
 .center {
-      text-align: center;
+  position: fixed; /* or absolute */
+  top: 20%;
+  left: 50%;
   }
