@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas( 1000, 800, WEBGL);
+  createCanvas( windowWidth, windowHeight, WEBGL);
   noStroke();
 }
 
@@ -38,7 +38,7 @@ function draw() {
   rotateY(frameCount / 100);
   rotateX(map(sin(t), -1, 1, -PI, PI));
 
-  sphere(100, 50);
+  sphere(200, 50);
 
   t += 0.025;
 }
