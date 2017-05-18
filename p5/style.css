@@ -7,16 +7,9 @@ h1 {
    position: absolute;
    left: 400px;
    top: 150px;
-   font-size: 26px;
+   font-size: 29px;
    font-family: 'Raleway', sans-serif;
    color: white;
-}
-
-h2 {
-    font-size: 20px;
-    color:green;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
 }
 
 #container {
